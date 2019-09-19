@@ -6,7 +6,7 @@ class EmailAddressParser
   @emails = emails
 	end
   
-  def parse() #parse emails into an array of unique addresses
+  def parse()
 		new_email_array = @emails.split(/[, ]/).reject(&:empty?).uniq
   end
 end
